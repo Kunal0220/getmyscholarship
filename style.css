@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    min-width: 1167px; 
+    overflow-x: hidden;
+    
+    }
+
+html , body{
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+ul {
+    text-decoration: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin-left: 40rem;
+    position: fixed;
+    margin-top:2rem ;
+}
+.nav-link{
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: #014870;
+    padding: .5rem;
+}
+.nav-link:hover{
+    cursor: pointer;
+    color: #828282;
+}
+#firstBack{
+    position: absolute;
+    z-index: -1;
+}
+.heading{
+    font-family: 'Poppins', sans-serif;
+    color: #014870;
+    font-size: 5rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+
+    line-height: 4rem;
+}
+.course{
+    width: 25rem;
+    position: absolute;
+    margin-left: 55rem;
+    margin-top: -12rem
+
+}
+.specCourse{
+    background-color: #f6cf31;
+    padding: 1rem;
+    margin: .8rem;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 1.8rem;
+    /* padding-top: 2rem; */
+
+}
+.specCourse img{
+    height: 1.9rem;
+}
+#pic1engg {
+    position: absolute;
+    margin-left: -6.5rem;
+}
+#pic1med {
+    position: absolute;
+    margin-left: -7.7rem;
+}
+#pic1law{
+    position: absolute;
+    margin-left: -8.7rem;
+}
+#pic1busi{
+    position: absolute;
+    margin-left: -2.4rem;
+}
+
+.headpara{
+    font-size: larger;
+    color:  #8f8f8f;
+    margin-left: 4.4rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.working{
+    margin-top: 15rem;
+    margin-left: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f6cf31;
+}
+#roadmap{
+    height: 35rem;
+    margin: auto;
+    margin-left: 9rem;
+}
+
+.info{
+    margin-top: 3rem;
+    margin-left: 6rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f6cf31;
+}
+.infoParent{
+    width: 70rem;
+    margin: auto
+}
+input{
+    background-color: #dbdbdb;
+    border-radius: 20px;
+    border: none;
+    height: 2.7rem;
+    width: 19rem;
+    color: #828282;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+::placeholder{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem
+}
+.firstRowInput , .secondRowInput , .thirdRowInput , .forthRowInput{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.secondRowInput , .thirdRowInput {
+    margin-top: 5rem;
+}
+.appeared{
+    color: #828282;
+    font-size: 1rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+#secondBack{
+    margin-left: 4rem;
+    margin-top: 50rem;
+    z-index: -2;
+    position: absolute;
+}
+
+.aboutpara{
+    color:#8f8f8f ;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width:70rem;
+    margin:auto;
+}
+.btn{
+    padding: .6rem;
+    text-align: center;
+    width: 9rem;
+    height: 3rem;
+    color: #014870;
+    background-color:#f6cf31 ;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    margin-top: 4rem;
+    margin-left: 30.5rem;
+
+
+    position: relative;
+    display: inline-block;
+
+    cursor: pointer;
+    text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+    overflow: hidden;
+    transition: all .5s;
+  
+}
+
+  
+  .buttonfx:before,
+  .buttonfx:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: #014870; /* onhover background color */
+    z-index: -1;
+    transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+    transition: all .5s;
+  }
+  
+  .buttonfx:before{
+    background: #fafcd6; /* button default background color */
+    z-index: -2;
+    transform: translate3D(0,0,0);
+  }
+  
+  .buttonfx:hover{
+      color: white;
+  }
+  
+  .buttonfx:hover:after{
+    transform: translate3D(0,0,0);
+    transition: all .5s;
+  }
+  
+.curtainup{
+    transform-style: preserve-3d;
+  }
+  
+  .curtainup:before,
+  .curtainup:after{
+    transform-origin: center center;
+    transform: scale(1,0);
+  }
+  
+
+  .curtainup:hover:before,
+  .curtainup:hover:after{
+    transform: scale(1);
+    border-radius: 0;
+  }
+
+  .blueBanner{
+    width: 140rem;
+    height: 8rem;
+    background-color: #014870;
+    margin: 0;
+    margin-top: 10rem;
+  }
+  .blueBanner img{
+    margin-left: 70rem;
+  }
+  .contacthr{
+    width: 15rem;
+    transform: rotate(90deg);
+    height: .2rem;
+    color: #828282;
+    background-color:#828282 ;
+}
+.hr1{
+    margin-top: 20rem;
+    margin-left:25rem;
+}
+.hr2 {
+      margin-top: -.3rem;
+    margin-left: 53rem;
+  }
+  .location img , .call img , .mail img{
+    height: 4rem;
+    position: absolute;
+  }
+
+  .location img{
+    margin-left: 13rem;
+    margin-top: 5.5rem;
+  }
+  .call img {
+    margin-left: 43rem;
+    margin-top: -16rem;
+  }
+  .mail img{
+    margin-left: 73rem;
+    margin-top: -16rem;
+  }
+
+  .loctionAddress1 {
+    color: #828282;
+    position: absolute;
+    margin-left: 9rem;
+    margin-top: 14rem;
+    text-align: center;
+  }
+  .loctionAddress2{
+    color: #828282;
+    position: absolute;
+    margin-left: 7.5rem;
+    margin-top: 18rem;
+    text-align: center;
+  }
+.phone{
+    color: #828282;
+    position: absolute;
+    margin-left: 42rem;
+    margin-top: -6rem;
+    text-align: center;
+}
+.email{
+    color: #828282;
+    position: absolute;
+    margin-left: 66rem;
+    margin-top: -6rem;
+    text-align: center;
+}
